@@ -25,7 +25,7 @@ region_input = st.selectbox('Region:', ['southwest', 'southeast','northwest','no
 age_input = st.number_input('Age (18 to 64):', min_value=18, max_value=64)
 bmi_input = st.number_input('BMI (15 to 54):', min_value=15, max_value=54)
 children_input = st.number_input('Children (0 to 6):', min_value=0, max_value=6)
-charges_input = st.number_input('Charges (1000 to 70,000):', min_value=1000, max_value=70000)
+# charges_input = st.number_input('Charges (1000 to 70,000):', min_value=1000, max_value=70000)
 
 # Index(['age', 'sex', 'bmi', 'children', 'smoker', 'region', 'charges'], dtype='object')
 
@@ -36,7 +36,7 @@ x_new = pd.DataFrame({
     'bmi': [bmi_input],
     'children': [children_input],
     'region': [region_input],
-    'charges': [charges_input]
+    # 'charges': [charges_input]
 })
 
 # Encoding
